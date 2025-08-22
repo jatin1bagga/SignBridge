@@ -1,0 +1,9 @@
+env/
+glove/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.vscode/
+*.ipynb_checkpoints
+*.csv
