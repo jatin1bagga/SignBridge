@@ -1,0 +1,12 @@
+# Core
+numpy
+pandas
+scikit-learn
+tensorflow
+
+# For serial communication
+pyserial
+
+# Optional (only if you use Jupyter)
+jupyter
+notebook
