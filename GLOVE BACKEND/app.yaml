@@ -1,0 +1,12 @@
+runtime: python311
+entrypoint: gunicorn -b :$PORT main:app
+
+instance_class: F2   # F2 = 2 CPU, 2GB RAM (adjust if needed)
+
+automatic_scaling:
+  max_instances: 2
+  min_instances: 0
+  target_cpu_utilization: 0.7
+
+env_variables:
+  TF_CPP_MIN_LOG_LEVEL: "2"   # Suppress TensorFlow logs
