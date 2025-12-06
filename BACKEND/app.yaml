@@ -1,0 +1,7 @@
+# app.yaml
+runtime: python311
+instance_class: F2  # F1 is often too small for TensorFlow/Keras
+entrypoint: gunicorn -b :$PORT -w 1 --threads 8 --timeout 0 main:app
+
+env_variables:
+  API_KEY: "kQHFTQo3XxTr31$UXXGoLuN4FknFmKFtYJJEZvap"
